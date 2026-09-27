@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef8f4;
+    color: #26383a;
+    line-height: 1.6;
+}
+
+/* Main CV Container */
+
+.cv-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(70, 130, 110, 0.15);
+}
+
+/* Header */
+
+header {
+    background: #ffffff;
+    text-align: center;
+    padding: 50px 30px 40px;
+    position: relative;
+    border-bottom: 1px solid #d7eee5;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 120px;
+    background: #d8f1e8;
+    border-radius: 0 0 100% 0;
+    z-index: 0;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #a5d9c5;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+/* Profile Picture */
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    outline: 4px solid #79c3a5;
+    display: block;
+    margin: 0 auto 25px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Name */
+
+header h1 {
+    font-size: 42px;
+    color: #26383a;
+    margin-bottom: 8px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+header p {
+    color: #4c7f70;
+    font-size: 19px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Main Content */
+
+main {
+    padding: 45px;
+    background: #ffffff;
+}
+
+/* Sections */
+
+section {
+    margin-bottom: 38px;
+}
+
+h2 {
+    color: #276b57;
+    font-size: 25px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #9bd3be;
+    position: relative;
+}
+
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #78bea1;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+h3 {
+    font-size: 19px;
+    color: #26383a;
+    margin-bottom: 5px;
+}
+
+section p {
+    color: #526365;
+    margin-bottom: 8px;
+}
+
+/* Profile Section */
+
+section:first-child p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+section:first-child h2 {
+    margin-top: 0;
+}
+
+section:first-child p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Education */
+
+.education-item {
+    background: #f7fcfa;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border-left: 4px solid #79c3a5;
+    transition: 0.3s;
+}
+
+.education-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(80, 150, 125, 0.12);
+}
+
+.education-item h3 {
+    color: #245f4e;
+}
+
+.education-item p {
+    margin-bottom: 3px;
+}
+
+/* Skills */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: #d9f0e7;
+    color: #245f4e;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #b9e2d2;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #a8d9c5;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Contact Information */
+
+section:last-of-type {
+    background: #f5fbf8;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+section:last-of-type p {
+    padding: 10px 0;
+    border-bottom: 1px solid #dceee7;
+}
+
+section:last-of-type p:last-child {
+    border-bottom: none;
+}
+
+section:last-of-type strong {
+    color: #276b57;
+}
+
+/* Footer */
+
+footer {
+    background: #dff2e9;
+    color: #3c7161;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #c4e6d8;
+}
+
+/* Decorative Mint Shapes */
+
+.cv-container::before {
+    content: "";
+    display: block;
+    height: 8px;
+    background: linear-gradient(
+        to right,
+        #a7dbc7,
+        #75bea0,
+        #dff3eb
+    );
+}
+
+/* Mobile Design */
+
+@media (max-width: 700px) {
+
+    .cv-container {
+        width: 95%;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+    header {
+        padding: 40px 20px 30px;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .skills {
+        gap: 8px;
+    }
+
+    .skills span {
+        font-size: 13px;
+        padding: 8px 13px;
+    }
+}
+
+/* Very Small Screens */
+
+@media (max-width: 450px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .profile-picture {
+        width: 105px;
+        height: 105px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        margin-bottom: 25px;
+    }
+}
