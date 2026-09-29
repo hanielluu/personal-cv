@@ -3,7 +3,7 @@
 ## Student Information
 
 **Complete Name:** Faith Honey Lou Miranda  
-**Year Level:** 4th Year  
+**Year Level:** Fourth Year BSIT Student
 **Set/Section:** BSIT 4B 
 **Subject:** Application Development and Emerging Technologiies
 
